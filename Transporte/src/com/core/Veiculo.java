@@ -1,6 +1,6 @@
 package com.core;
 
-public class Veiculo {
+abstract public class Veiculo {
   private String cor;
   private String placa;
   private String motorista;
@@ -10,6 +10,8 @@ public class Veiculo {
     this.placa = placa;
     this.motorista = motorista;
   }
+
+  public abstract void implementar ();
 
   public String getCor() {
     return cor;
